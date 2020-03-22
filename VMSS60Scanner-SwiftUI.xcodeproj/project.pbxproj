@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		313212262427C64C00DECF2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212252427C64C00DECF2B /* AppDelegate.swift */; };
+		313212282427C64C00DECF2B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212272427C64C00DECF2B /* SceneDelegate.swift */; };
+		3132122A2427C64C00DECF2B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212292427C64C00DECF2B /* ContentView.swift */; };
+		3132122C2427C64E00DECF2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3132122B2427C64E00DECF2B /* Assets.xcassets */; };
+		3132122F2427C64E00DECF2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3132122E2427C64E00DECF2B /* Preview Assets.xcassets */; };
+		313212322427C64E00DECF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313212302427C64E00DECF2B /* LaunchScreen.storyboard */; };
+		3132123D2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132123C2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift */; };
+		313212482427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		313212392427C64E00DECF2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3132121A2427C64C00DECF2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 313212212427C64C00DECF2B;
+			remoteInfo = "VMSS60Scanner-SwiftUI";
+		};
+		313212442427C64E00DECF2B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3132121A2427C64C00DECF2B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 313212212427C64C00DECF2B;
+			remoteInfo = "VMSS60Scanner-SwiftUI";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		313212222427C64C00DECF2B /* VMSS60Scanner-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VMSS60Scanner-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313212252427C64C00DECF2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		313212272427C64C00DECF2B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		313212292427C64C00DECF2B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3132122B2427C64E00DECF2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3132122E2427C64E00DECF2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		313212312427C64E00DECF2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		313212332427C64E00DECF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313212382427C64E00DECF2B /* VMSS60Scanner-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VMSS60Scanner-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3132123C2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSS60Scanner_SwiftUITests.swift; sourceTree = "<group>"; };
+		3132123E2427C64E00DECF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		313212432427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VMSS60Scanner-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSS60Scanner_SwiftUIUITests.swift; sourceTree = "<group>"; };
+		313212492427C64E00DECF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3132121F2427C64C00DECF2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313212352427C64E00DECF2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313212402427C64E00DECF2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		313212192427C64C00DECF2B = {
+			isa = PBXGroup;
+			children = (
+				313212242427C64C00DECF2B /* VMSS60Scanner-SwiftUI */,
+				3132123B2427C64E00DECF2B /* VMSS60Scanner-SwiftUITests */,
+				313212462427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests */,
+				313212232427C64C00DECF2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		313212232427C64C00DECF2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				313212222427C64C00DECF2B /* VMSS60Scanner-SwiftUI.app */,
+				313212382427C64E00DECF2B /* VMSS60Scanner-SwiftUITests.xctest */,
+				313212432427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		313212242427C64C00DECF2B /* VMSS60Scanner-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				313212252427C64C00DECF2B /* AppDelegate.swift */,
+				313212272427C64C00DECF2B /* SceneDelegate.swift */,
+				313212292427C64C00DECF2B /* ContentView.swift */,
+				3132122B2427C64E00DECF2B /* Assets.xcassets */,
+				313212302427C64E00DECF2B /* LaunchScreen.storyboard */,
+				313212332427C64E00DECF2B /* Info.plist */,
+				3132122D2427C64E00DECF2B /* Preview Content */,
+			);
+			path = "VMSS60Scanner-SwiftUI";
+			sourceTree = "<group>";
+		};
+		3132122D2427C64E00DECF2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3132122E2427C64E00DECF2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3132123B2427C64E00DECF2B /* VMSS60Scanner-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3132123C2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift */,
+				3132123E2427C64E00DECF2B /* Info.plist */,
+			);
+			path = "VMSS60Scanner-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		313212462427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests */ = {
+			isa = PBXGroup;
+			children = (
+				313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */,
+				313212492427C64E00DECF2B /* Info.plist */,
+			);
+			path = "VMSS60Scanner-SwiftUIUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		313212212427C64C00DECF2B /* VMSS60Scanner-SwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3132124C2427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUI" */;
+			buildPhases = (
+				3132121E2427C64C00DECF2B /* Sources */,
+				3132121F2427C64C00DECF2B /* Frameworks */,
+				313212202427C64C00DECF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VMSS60Scanner-SwiftUI";
+			productName = "VMSS60Scanner-SwiftUI";
+			productReference = 313212222427C64C00DECF2B /* VMSS60Scanner-SwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		313212372427C64E00DECF2B /* VMSS60Scanner-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3132124F2427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUITests" */;
+			buildPhases = (
+				313212342427C64E00DECF2B /* Sources */,
+				313212352427C64E00DECF2B /* Frameworks */,
+				313212362427C64E00DECF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3132123A2427C64E00DECF2B /* PBXTargetDependency */,
+			);
+			name = "VMSS60Scanner-SwiftUITests";
+			productName = "VMSS60Scanner-SwiftUITests";
+			productReference = 313212382427C64E00DECF2B /* VMSS60Scanner-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		313212422427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 313212522427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUIUITests" */;
+			buildPhases = (
+				3132123F2427C64E00DECF2B /* Sources */,
+				313212402427C64E00DECF2B /* Frameworks */,
+				313212412427C64E00DECF2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				313212452427C64E00DECF2B /* PBXTargetDependency */,
+			);
+			name = "VMSS60Scanner-SwiftUIUITests";
+			productName = "VMSS60Scanner-SwiftUIUITests";
+			productReference = 313212432427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3132121A2427C64C00DECF2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "James Xu";
+				TargetAttributes = {
+					313212212427C64C00DECF2B = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					313212372427C64E00DECF2B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 313212212427C64C00DECF2B;
+					};
+					313212422427C64E00DECF2B = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 313212212427C64C00DECF2B;
+					};
+				};
+			};
+			buildConfigurationList = 3132121D2427C64C00DECF2B /* Build configuration list for PBXProject "VMSS60Scanner-SwiftUI" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 313212192427C64C00DECF2B;
+			productRefGroup = 313212232427C64C00DECF2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				313212212427C64C00DECF2B /* VMSS60Scanner-SwiftUI */,
+				313212372427C64E00DECF2B /* VMSS60Scanner-SwiftUITests */,
+				313212422427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		313212202427C64C00DECF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313212322427C64E00DECF2B /* LaunchScreen.storyboard in Resources */,
+				3132122F2427C64E00DECF2B /* Preview Assets.xcassets in Resources */,
+				3132122C2427C64E00DECF2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313212362427C64E00DECF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313212412427C64E00DECF2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3132121E2427C64C00DECF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313212262427C64C00DECF2B /* AppDelegate.swift in Sources */,
+				313212282427C64C00DECF2B /* SceneDelegate.swift in Sources */,
+				3132122A2427C64C00DECF2B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		313212342427C64E00DECF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3132123D2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3132123F2427C64E00DECF2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				313212482427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3132123A2427C64E00DECF2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 313212212427C64C00DECF2B /* VMSS60Scanner-SwiftUI */;
+			targetProxy = 313212392427C64E00DECF2B /* PBXContainerItemProxy */;
+		};
+		313212452427C64E00DECF2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 313212212427C64C00DECF2B /* VMSS60Scanner-SwiftUI */;
+			targetProxy = 313212442427C64E00DECF2B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		313212302427C64E00DECF2B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				313212312427C64E00DECF2B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3132124A2427C64E00DECF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3132124B2427C64E00DECF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3132124D2427C64E00DECF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VMSS60Scanner-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3132124E2427C64E00DECF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"VMSS60Scanner-SwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUI/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		313212502427C64E00DECF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMSS60Scanner-SwiftUI.app/VMSS60Scanner-SwiftUI";
+			};
+			name = Debug;
+		};
+		313212512427C64E00DECF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUITests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMSS60Scanner-SwiftUI.app/VMSS60Scanner-SwiftUI";
+			};
+			name = Release;
+		};
+		313212532427C64E00DECF2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VMSS60Scanner-SwiftUI";
+			};
+			name = Debug;
+		};
+		313212542427C64E00DECF2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3LZY6NS3UD;
+				INFOPLIST_FILE = "VMSS60Scanner-SwiftUIUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "jamesxu.VMSS60Scanner-SwiftUIUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "VMSS60Scanner-SwiftUI";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3132121D2427C64C00DECF2B /* Build configuration list for PBXProject "VMSS60Scanner-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3132124A2427C64E00DECF2B /* Debug */,
+				3132124B2427C64E00DECF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3132124C2427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3132124D2427C64E00DECF2B /* Debug */,
+				3132124E2427C64E00DECF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3132124F2427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				313212502427C64E00DECF2B /* Debug */,
+				313212512427C64E00DECF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		313212522427C64E00DECF2B /* Build configuration list for PBXNativeTarget "VMSS60Scanner-SwiftUIUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				313212532427C64E00DECF2B /* Debug */,
+				313212542427C64E00DECF2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3132121A2427C64C00DECF2B /* Project object */;
+}
