@@ -32,7 +32,7 @@ struct UserView: View {
                     case let .failure(error):
                         print(error)
                         self.alertTitle = "There was an error"
-                        self.alertMsg = "\(error)"
+                        self.alertMsg = "\(error.errorDescription ?? error.localizedDescription)"
                         self.showingAlert = true
                     }
                 }

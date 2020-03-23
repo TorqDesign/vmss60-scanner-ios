@@ -20,6 +20,7 @@
 		3132125D2427C90700DECF2B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132125C2427C90700DECF2B /* UserData.swift */; };
 		31C63ECE2427E19B002883FF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C63ECD2427E19B002883FF /* UserView.swift */; };
 		31C63ED12428066F002883FF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 31C63ED02428066F002883FF /* Alamofire */; };
+		31C9EB6624283D58003D48F1 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 31C9EB6524283D58003D48F1 /* CarBode */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31C9EB6624283D58003D48F1 /* CarBode in Frameworks */,
 				313212572427C67400DECF2B /* CodeScanner in Frameworks */,
 				31C63ED12428066F002883FF /* Alamofire in Frameworks */,
 			);
@@ -168,6 +170,7 @@
 			packageProductDependencies = (
 				313212562427C67400DECF2B /* CodeScanner */,
 				31C63ED02428066F002883FF /* Alamofire */,
+				31C9EB6524283D58003D48F1 /* CarBode */,
 			);
 			productName = "VMSS60Scanner-SwiftUI";
 			productReference = 313212222427C64C00DECF2B /* VMSS60Scanner-SwiftUI.app */;
@@ -244,6 +247,7 @@
 			packageReferences = (
 				313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */,
 				31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */,
+				31C9EB6424283D58003D48F1 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 			);
 			productRefGroup = 313212232427C64C00DECF2B /* Products */;
 			projectDirPath = "";
@@ -636,6 +640,14 @@
 				minimumVersion = 5.0.4;
 			};
 		};
+		31C9EB6424283D58003D48F1 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heart/CarBode-Barcode-Scanner-For-SwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -648,6 +660,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		31C9EB6524283D58003D48F1 /* CarBode */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31C9EB6424283D58003D48F1 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */;
+			productName = CarBode;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
