@@ -24,43 +24,43 @@ struct QRScannerView: View {
             NavigationLink(destination: QRScannerView(event: self.event), isActive: self.$reset) {
                 Text("")
             }.hidden()
-            CBScanner(supportBarcode: [.qr]) //Set type of barcode you want to scan
-                .interval(delay: 1.0) //Event will trigger every 5 seconds
-                .found{
-                    //Your..Code..Here
-                    print($0)
-                    let code = $0
-                    do {
-                        let user: UserData = try getUserStructFromB64(b64String: code)
-                        print("Found user: \(user.firstName)")
-                        self.user = user
-                        self.pushActive = true
-                    } catch {
-                        self.showingAlert = true
-                        self.reset = true
-                        print("Unexpected error: \(error).")
-                    }
-                    print("Found code: \(code)")
-            }
-            //            CodeScannerView(codeTypes: [.qr], simulatedData: "eyJmaXJzdE5hbWUiOiAiamFtZXMiLCAibGFzdE5hbWUiOiAieHUiLCAidHlwZSI6ICJtYWluLWV2ZW50IiwgImlkIjoiYWdzajEyMyJ9") { result in
-            //                switch result {
-            //                case .success(let code):
-            //                    do {
-            //                        let user: UserData = try getUserStructFromB64(b64String: code)
-            //                        print("Found user: \(user.firstName)")
-            //                        self.user = user
-            //                        self.pushActive = true
-            //                    } catch {
-            //                        self.showingAlert = true
-            //                        self.reset = true
-            //                        print("Unexpected error: \(error).")
-            //                    }
-            //                    print("Found code: \(code)")
-            //                case .failure(let error):
-            //                    print(error.localizedDescription)
-            //                }
-            //            }
-            //            .edgesIgnoringSafeArea(.top)
+//            CBScanner(supportBarcode: [.qr]) //Set type of barcode you want to scan
+//                .interval(delay: 1.0) //Event will trigger every 5 seconds
+//                .found{
+//                    //Your..Code..Here
+//                    print($0)
+//                    let code = $0
+//                    do {
+//                        let user: UserData = try getUserStructFromB64(b64String: code)
+//                        print("Found user: \(user.firstName)")
+//                        self.user = user
+//                        self.pushActive = true
+//                    } catch {
+//                        self.showingAlert = true
+//                        self.reset = true
+//                        print("Unexpected error: \(error).")
+//                    }
+//                    print("Found code: \(code)")
+//            }
+                        CodeScannerView(codeTypes: [.qr], simulatedData: "eyJmaXJzdE5hbWUiOiAiamFtZXMiLCAibGFzdE5hbWUiOiAieHUiLCAidHlwZSI6ICJtYWluLWV2ZW50IiwgImlkIjoiYWdzajEyMyJ9") { result in
+                            switch result {
+                            case .success(let code):
+                                do {
+                                    let user: UserData = try getUserStructFromB64(b64String: code)
+                                    print("Found user: \(user.firstName)")
+                                    self.user = user
+                                    self.pushActive = true
+                                } catch {
+                                    self.showingAlert = true
+                                    self.reset = true
+                                    print("Unexpected error: \(error).")
+                                }
+                                print("Found code: \(code)")
+                            case .failure(let error):
+                                print(error.localizedDescription)
+                            }
+                        }
+                        .edgesIgnoringSafeArea(.top)
         }
     }
 }

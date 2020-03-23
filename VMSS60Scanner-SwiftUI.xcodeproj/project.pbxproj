@@ -15,9 +15,9 @@
 		313212322427C64E00DECF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313212302427C64E00DECF2B /* LaunchScreen.storyboard */; };
 		3132123D2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132123C2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift */; };
 		313212482427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */; };
-		313212572427C67400DECF2B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 313212562427C67400DECF2B /* CodeScanner */; };
 		3132125B2427C83200DECF2B /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132125A2427C83200DECF2B /* QRScannerView.swift */; };
 		3132125D2427C90700DECF2B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132125C2427C90700DECF2B /* UserData.swift */; };
+		3166CFF224285EAD00796F5A /* CodeScanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3166CFF124285EAD00796F5A /* CodeScanner.swift */; };
 		31C63ECE2427E19B002883FF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C63ECD2427E19B002883FF /* UserView.swift */; };
 		31C63ED12428066F002883FF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 31C63ED02428066F002883FF /* Alamofire */; };
 		31C9EB6624283D58003D48F1 /* CarBode in Frameworks */ = {isa = PBXBuildFile; productRef = 31C9EB6524283D58003D48F1 /* CarBode */; };
@@ -57,6 +57,7 @@
 		313212492427C64E00DECF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3132125A2427C83200DECF2B /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		3132125C2427C90700DECF2B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		3166CFF124285EAD00796F5A /* CodeScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeScanner.swift; sourceTree = "<group>"; };
 		31C63ECD2427E19B002883FF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +67,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				31C9EB6624283D58003D48F1 /* CarBode in Frameworks */,
-				313212572427C67400DECF2B /* CodeScanner in Frameworks */,
 				31C63ED12428066F002883FF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -111,6 +111,7 @@
 		313212242427C64C00DECF2B /* VMSS60Scanner-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3166CFF124285EAD00796F5A /* CodeScanner.swift */,
 				3132125A2427C83200DECF2B /* QRScannerView.swift */,
 				313212252427C64C00DECF2B /* AppDelegate.swift */,
 				3132125C2427C90700DECF2B /* UserData.swift */,
@@ -168,7 +169,6 @@
 			);
 			name = "VMSS60Scanner-SwiftUI";
 			packageProductDependencies = (
-				313212562427C67400DECF2B /* CodeScanner */,
 				31C63ED02428066F002883FF /* Alamofire */,
 				31C9EB6524283D58003D48F1 /* CarBode */,
 			);
@@ -245,7 +245,6 @@
 			);
 			mainGroup = 313212192427C64C00DECF2B;
 			packageReferences = (
-				313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */,
 				31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */,
 				31C9EB6424283D58003D48F1 /* XCRemoteSwiftPackageReference "CarBode-Barcode-Scanner-For-SwiftUI" */,
 			);
@@ -293,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				313212262427C64C00DECF2B /* AppDelegate.swift in Sources */,
+				3166CFF224285EAD00796F5A /* CodeScanner.swift in Sources */,
 				31C63ECE2427E19B002883FF /* UserView.swift in Sources */,
 				313212282427C64C00DECF2B /* SceneDelegate.swift in Sources */,
 				3132125B2427C83200DECF2B /* QRScannerView.swift in Sources */,
@@ -624,14 +624,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/CodeScanner";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.3;
-			};
-		};
 		31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
@@ -651,11 +643,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		313212562427C67400DECF2B /* CodeScanner */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */;
-			productName = CodeScanner;
-		};
 		31C63ED02428066F002883FF /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */;
