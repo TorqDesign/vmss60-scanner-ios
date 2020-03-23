@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,11 @@
 		313212322427C64E00DECF2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 313212302427C64E00DECF2B /* LaunchScreen.storyboard */; };
 		3132123D2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132123C2427C64E00DECF2B /* VMSS60Scanner_SwiftUITests.swift */; };
 		313212482427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */; };
+		313212572427C67400DECF2B /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = 313212562427C67400DECF2B /* CodeScanner */; };
+		3132125B2427C83200DECF2B /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132125A2427C83200DECF2B /* QRScannerView.swift */; };
+		3132125D2427C90700DECF2B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3132125C2427C90700DECF2B /* UserData.swift */; };
+		31C63ECE2427E19B002883FF /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C63ECD2427E19B002883FF /* UserView.swift */; };
+		31C63ED12428066F002883FF /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 31C63ED02428066F002883FF /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,9 @@
 		313212432427C64E00DECF2B /* VMSS60Scanner-SwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VMSS60Scanner-SwiftUIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		313212472427C64E00DECF2B /* VMSS60Scanner_SwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMSS60Scanner_SwiftUIUITests.swift; sourceTree = "<group>"; };
 		313212492427C64E00DECF2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3132125A2427C83200DECF2B /* QRScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		3132125C2427C90700DECF2B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		31C63ECD2427E19B002883FF /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				313212572427C67400DECF2B /* CodeScanner in Frameworks */,
+				31C63ED12428066F002883FF /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,7 +109,10 @@
 		313212242427C64C00DECF2B /* VMSS60Scanner-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				3132125A2427C83200DECF2B /* QRScannerView.swift */,
 				313212252427C64C00DECF2B /* AppDelegate.swift */,
+				3132125C2427C90700DECF2B /* UserData.swift */,
+				31C63ECD2427E19B002883FF /* UserView.swift */,
 				313212272427C64C00DECF2B /* SceneDelegate.swift */,
 				313212292427C64C00DECF2B /* ContentView.swift */,
 				3132122B2427C64E00DECF2B /* Assets.xcassets */,
@@ -152,6 +165,10 @@
 			dependencies = (
 			);
 			name = "VMSS60Scanner-SwiftUI";
+			packageProductDependencies = (
+				313212562427C67400DECF2B /* CodeScanner */,
+				31C63ED02428066F002883FF /* Alamofire */,
+			);
 			productName = "VMSS60Scanner-SwiftUI";
 			productReference = 313212222427C64C00DECF2B /* VMSS60Scanner-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +241,10 @@
 				Base,
 			);
 			mainGroup = 313212192427C64C00DECF2B;
+			packageReferences = (
+				313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 313212232427C64C00DECF2B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -268,7 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				313212262427C64C00DECF2B /* AppDelegate.swift in Sources */,
+				31C63ECE2427E19B002883FF /* UserView.swift in Sources */,
 				313212282427C64C00DECF2B /* SceneDelegate.swift in Sources */,
+				3132125B2427C83200DECF2B /* QRScannerView.swift in Sources */,
+				3132125D2427C90700DECF2B /* UserData.swift in Sources */,
 				3132122A2427C64C00DECF2B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +618,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.3;
+			};
+		};
+		31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		313212562427C67400DECF2B /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 313212552427C67400DECF2B /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+		31C63ED02428066F002883FF /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 31C63ECF2428066F002883FF /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3132121A2427C64C00DECF2B /* Project object */;
 }
